@@ -1,0 +1,12 @@
+@model GameModel;
+@{
+    ViewData["Title"] = "Delete " + Model.Name + "?";
+}
+
+<div class="text-center">
+    <h2 class="display-4">@ViewData["Title"]</h2>
+    <div>
+        <a class="btn btn-success btn-lg" role="button" asp-controller="Game" asp-action="ConfirmDelete" asp-route-id="@Model.Id">Confirmar</a>
+        <a class="btn btn-outline-danger btn-lg" role="button" asp-controller="Game" asp-action="Index">Cancelar</a>
+    </div>
+</div>

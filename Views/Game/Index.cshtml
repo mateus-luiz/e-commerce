@@ -1,0 +1,35 @@
+@model List<GameModel>;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Products Manager</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Developer</th>
+                <th scope="col">Game Art</th>
+                <th scope="col"></th>
+                <th scope="col"><a class="btn btn-outline-success" role="button" asp-action="Create" asp-controller="Game">ADD PRODUCT</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(GameModel game in Model)
+            {
+                <tr>
+                    <th scope="row">@game.Id</th>
+                    <td>@game.Name</td>
+                    <td>@game.Price</td>
+                    <td>@game.Developer</td>
+                    <td><img src="~/images/@game.ArtDir" alt="..."></td>
+                    <td><a class="btn btn-outline-primary" role="button" asp-controller="Game" asp-action="Edit" asp-route-id="@game.Id">EDIT</a></td>
+                    <td><a class="btn btn-outline-danger" role="button" asp-controller="Game" asp-action="Delete" asp-route-id="@game.Id">DELETE</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

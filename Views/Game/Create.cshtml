@@ -1,0 +1,27 @@
+@model GameModel;
+@{
+    ViewData["Title"] = "Add Game";
+}
+
+<div>
+    <form asp-controller="Game" asp-action="Create" method="post">
+        <div class="form-group">
+            <label for="fName">Name</label>
+            <input type="text" asp-for="Name" class="form-control" id="fName" placeholder="Game Name">
+        </div>
+        <div class="form-group">
+            <label for="fPrice">Price</label>
+            <input type="number" asp-for="Price" class="form-control" id="fPrice" min="0" value="0" step=".01">
+        </div>
+        <div class="form-group">
+            <label for="fDev">Developer</label>
+            <input type="text" asp-for="Developer" class="form-control" id="fDev" placeholder="Developer Name">
+        </div>
+        <div class="form-group">
+            <label for="fArt">ArtDir</label>
+            <input type="text" asp-for="ArtDir" class="form-control" id="fArt" placeholder="Art Name">
+        </div>
+        <button type="submit" class="btn btn-success">Create</button>
+        <a class="btn btn-outline-danger" role="button" asp-controller="Game" asp-action="Index">Cancel</a>
+    </form>
+</div>

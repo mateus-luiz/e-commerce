@@ -24,3 +24,12 @@ E:\e-commerce\obj\Debug\net6.0\refint\e-commerce.dll
 E:\e-commerce\obj\Debug\net6.0\e-commerce.pdb
 E:\e-commerce\obj\Debug\net6.0\e-commerce.genruntimeconfig.cache
 E:\e-commerce\obj\Debug\net6.0\ref\e-commerce.dll
+E:\e-commerce\bin\Debug\net6.0\Humanizer.dll
+E:\e-commerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\e-commerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\e-commerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\e-commerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\e-commerce\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\e-commerce\bin\Debug\net6.0\MySqlConnector.dll
+E:\e-commerce\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\e-commerce\obj\Debug\net6.0\e-commerce.csproj.CopyComplete
