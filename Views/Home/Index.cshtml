@@ -1,8 +1,35 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<GameModel>;
+@{
+    ViewData["Title"] = "Home";
 }
+<style>
+    img.art{
+        width: 286px;
+        height: 180px;
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    p{
+        height: 100px;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+</style>
+
+<div class="d-flex flex-wrap">
+    @foreach(GameModel game in Model)
+    {
+        <div class="card mx-3" style="width: 18rem;">
+            <img class="card-img-top art" src="@game.ArtUrl" alt="@game.Name">
+            <div class="card-body">
+                <h5 class="card-title">@game.Name</h5>
+                <p class="card-text text-justify">@game.Description</p>
+                <div class="d-flex justify-content-between media">
+                    <h4 class="card-subtitle text-muted align-self-center">$ @game.Price</h4>
+                    <a class="btn btn-primary" role="button" asp-controller="Home" asp-action="Game" asp-route-id="@game.Id">Open</a>
+                </div>
+            </div>
+        </div>
+    }
 </div>

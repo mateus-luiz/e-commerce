@@ -3,6 +3,13 @@
     ViewData["Title"] = "Home Page";
 }
 
+<style>
+    img.art{
+        width: 75px;
+        height: 75px;
+    }
+</style>
+
 <div class="text-center">
     <h1 class="display-4">Products Manager</h1>
     <table class="table">
@@ -23,9 +30,9 @@
                 <tr>
                     <th scope="row">@game.Id</th>
                     <td>@game.Name</td>
-                    <td>@game.Price</td>
+                    <td>$@game.Price</td>
                     <td>@game.Developer</td>
-                    <td><img src="~/images/@game.ArtDir" alt="..."></td>
+                    <td><img class="img-thumbnail rounded art" src="@game.ArtUrl" alt="@game.Name"></td>
                     <td><a class="btn btn-outline-primary" role="button" asp-controller="Game" asp-action="Edit" asp-route-id="@game.Id">EDIT</a></td>
                     <td><a class="btn btn-outline-danger" role="button" asp-controller="Game" asp-action="Delete" asp-route-id="@game.Id">DELETE</a></td>
                 </tr>

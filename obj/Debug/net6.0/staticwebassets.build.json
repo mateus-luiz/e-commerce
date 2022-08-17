@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eSjJQiWLm8Y4SQQCFFsRWxUixHobK3i7hPYELdSSC5Y=",
+  "Hash": "V+HBtAzlgdg7Bd+A2y0yFODuM644eUTp5I1NtD4NfHU=",
   "Source": "e-commerce",
   "BasePath": "_content/e-commerce",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\e-commerce\\wwwroot\\images\\godofwar.jpg",
+      "SourceId": "e-commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\e-commerce\\wwwroot\\",
+      "BasePath": "_content/e-commerce",
+      "RelativePath": "images/godofwar.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\godofwar.jpg"
     },
     {
       "Identity": "E:\\e-commerce\\wwwroot\\js\\site.js",

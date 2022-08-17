@@ -18,8 +18,12 @@
             <input type="text" asp-for="Developer" class="form-control" id="fDev" value="@Model.Developer">
         </div>
         <div class="form-group">
+            <label for="fDev">Description</label>
+            <input type="text" asp-for="Description" class="form-control" id="fDev" value="@Model.Description">
+        </div>
+        <div class="form-group">
             <label for="fArt">ArtDir</label>
-            <input type="text" asp-for="ArtDir" class="form-control" id="fArt" value="@Model.ArtDir">
+            <input type="text" asp-for="ArtUrl" class="form-control" id="fArt" value="@Model.ArtUrl">
         </div>
         <button type="submit" class="btn btn-success">Save</button>
         <a class="btn btn-outline-danger" role="button" asp-controller="Game" asp-action="Index">Cancel</a>

@@ -11,6 +11,7 @@ namespace e_commerce.Models
         public string? Name { get; set; }
         public double Price { get; set; }
         public string? Developer { get; set; }
-        public string? ArtDir { get; set; }
+        public string? ArtUrl { get; set; }
+        public string? Description { get; set; }
     }
 }

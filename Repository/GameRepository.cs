@@ -42,7 +42,8 @@ namespace e_commerce.Repository
             dbGame.Name = game.Name;
             dbGame.Price = game.Price;
             dbGame.Developer = game.Developer;
-            dbGame.ArtDir = game.ArtDir;
+            dbGame.Description = game.Description;
+            dbGame.ArtUrl = game.ArtUrl;
 
             _context.Games.Update(dbGame);
             _context.SaveChanges();
